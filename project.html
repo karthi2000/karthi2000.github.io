@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Karthi Raam - Curriculum Vitae</title>
+<link rel="shortcut icon" href="img/favicon.ico">
+<style>
+html,body,div,span,object,iframe,h1,h1,h3,h4 style="color:#cf8a05;font-weight:bold",h5,h4 style="color:#cf8a05;font-weight:bold",p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
+border:0;
+font:inherit;
+font-size:100%;
+margin:0;
+padding:0;
+vertical-align:baseline;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+display:block;
+}
+
+html, body {background: #181818; font-family: 'Lato', helvetica, arial, sans-serif; font-size: 16px; color: #222;}
+
+.clear {clear: both;}
+
+p {
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-bottom: 20px;
+	color: #444;
+}
+
+#cv {
+	width: 90%;
+	max-width: 800px;
+	background: #f3f3f3;
+	margin: 30px auto;
+}
+
+.mainDetails {
+	padding: 25px 35px;
+	border-bottom: 2px solid #cf8a05;
+	background: #ededed;
+}
+
+#name h1 {
+	font-size: 2.5em;
+	font-weight: 700;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	margin-bottom: -6px;
+}
+
+#name h1 {
+	font-size: 2em;
+	margin-left: 2px;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+}
+
+#mainArea {
+	padding: 0 40px;
+}
+
+#headshot {
+	width: 12.5%;
+	float: left;
+	margin-right: 30px;
+}
+
+#headshot img {
+	width: 100%;
+	height: auto;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+#name {
+	float: left;
+}
+
+#contactDetails {
+	float: right;
+}
+
+#contactDetails ul {
+	list-style-type: none;
+	font-size: 0.9em;
+	margin-top: 2px;
+}
+
+#contactDetails ul li {
+	margin-bottom: 3px;
+	color: #444;
+}
+
+#contactDetails ul li a, a[href^=tel] {
+	color: #444; 
+	text-decoration: none;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+
+#contactDetails ul li a:hover { 
+	color: #cf8a05;
+}
+
+
+section {
+	border-top: 1px solid #dedede;
+	padding: 20px 0 0;
+}
+
+section:first-child {
+	border-top: 0;
+}
+
+section:last-child {
+	padding: 20px 0 10px;
+}
+
+.sectionTitle {
+	float: left;
+	width: 25%;
+}
+
+.sectionContent {
+	float: right;
+	width: 72.5%;
+}
+
+.sectionTitle h1 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-size: 1.5em;
+	color: #cf8a05;
+}
+
+.sectionContent h1 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	margin-bottom: -2px;
+}
+
+.subDetails {
+	font-size: 0.8em;
+	font-style: italic;
+	margin-bottom: 3px;
+}
+
+.keySkills {
+	list-style-type: none;
+	-moz-column-count:3;
+	-webkit-column-count:3;
+	column-count:3;
+	margin-bottom: 20px;
+	font-size: 1em;
+	color: #444;
+}
+
+.keySkills ul li {
+	margin-bottom: 3px;
+}
+
+@media all and (min-width: 602px) and (max-width: 800px) {
+	#headshot {
+		display: none;
+	}
+	
+	.keySkills {
+	-moz-column-count:2;
+	-webkit-column-count:2;
+	column-count:2;
+	}
+}
+
+@media all and (max-width: 601px) {
+	#cv {
+		width: 95%;
+		margin: 10px auto;
+		min-width: 280px;
+	}
+	
+	#headshot {
+		display: none;
+	}
+	
+	#name, #contactDetails {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	
+	.sectionTitle, .sectionContent {
+		float: none;
+		width: 100%;
+	}
+	
+	.sectionTitle {
+		margin-left: -2px;
+		font-size: 1.25em;
+	}
+	
+	.keySkills {
+		-moz-column-count:2;
+		-webkit-column-count:2;
+		column-count:2;
+	}
+}
+
+@media all and (max-width: 480px) {
+	.mainDetails {
+		padding: 15px 15px;
+	}
+	
+	section {
+		padding: 15px 0 0;
+	}
+	
+	#mainArea {
+		padding: 0 25px;
+	}
+
+	
+	.keySkills {
+	-moz-column-count:1;
+	-webkit-column-count:1;
+	column-count:1;
+	}
+	
+	#name h1 {
+		line-height: .8em;
+		margin-bottom: 4px;
+	}
+}
+
+@media print {
+    #cv {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes reset {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes reset {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+
+@-moz-keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes reset {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	40% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.instaFade {
+    -webkit-animation-name: reset, fade-in;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: ease-in;
+	
+	-moz-animation-name: reset, fade-in;
+    -moz-animation-duration: 1.5s;
+    -moz-animation-timing-function: ease-in;
+	
+	animation-name: reset, fade-in;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+.quickFade {
+    -webkit-animation-name: reset, fade-in;
+    -webkit-animation-duration: 2.5s;
+    -webkit-animation-timing-function: ease-in;
+	
+	-moz-animation-name: reset, fade-in;
+    -moz-animation-duration: 2.5s;
+    -moz-animation-timing-function: ease-in;
+	
+	animation-name: reset, fade-in;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in;
+}
+ 
+.delayOne {
+	-webkit-animation-delay: 0, .5s;
+	-moz-animation-delay: 0, .5s;
+	animation-delay: 0, .5s;
+}
+
+.delayTwo {
+	-webkit-animation-delay: 0, 1s;
+	-moz-animation-delay: 0, 1s;
+	animation-delay: 0, 1s;
+}
+
+.delayThree {
+	-webkit-animation-delay: 0, 1.5s;
+	-moz-animation-delay: 0, 1.5s;
+	animation-delay: 0, 1.5s;
+}
+
+.delayFour {
+	-webkit-animation-delay: 0, 2s;
+	-moz-animation-delay: 0, 2s;
+	animation-delay: 0, 2s;
+}
+
+.delayFive {
+	-webkit-animation-delay: 0, 2.5s;
+	-moz-animation-delay: 0, 2.5s;
+	animation-delay: 0, 2.5s;
+}
+</style>
+<meta charset="UTF-8"> 
+
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+</head>
+
+
+
+
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="https://i.ibb.co/ZLq5YLK/KARTHI-RAAM.jpg" alt="Karthi Raam" height="42" width="42" />
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">Karthi Raam K B</h1>
+			
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li><span style="color:#cf8a05;font-weight:bold">Email Id  :</span> <a href="mailto:karthiraam2000@gmail.com" target="_blank">karthiraam2000@gmail.com</a></li>
+				
+				<li><span style="color:#cf8a05;font-weight:bold">Phone No :</span>+91-7871997698</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			
+				<div class="sectionTitle">
+					<h1>Project 1</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<article>
+					<h1>Online Bus Booking System</h1>
+					<h4 style="color:#cf8a05;font-weight:bold">Project Duration<h4>
+					<p>5 Days</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Role<h4>
+					<p>Technical Developer</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Team Size<h4>
+					<p>1</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Software Used<h4>
+					<p>Netbeans 8.2</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Language Used<h4>
+					<p>JSP and Servlets, CSS</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Project Description<h4>
+					<p>The scope of the project is to develop an Web Application for the Bus booking. The Online Bus booking system will enable the user to select the date, time seat, route of the bus easily.</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Responsibility<h4>
+					<ul type="square">
+				<li>Developed the JSP code for the front design of web page.</li>
+				<li>Developed the Backend database using the MySQL and establish the connection.</li>
+	
+			</ul>
+			<h4 style="color:#cf8a05;font-weight:bold">Github Code<h4>
+			<a href="https://github.com/karthi2000/online-bus-booking">https://github.com/karthi2000/online-bus-booking</a>
+				</article>
+				
+				
+				
+				</div>
+			
+			<div class="clear"></div>
+		</section>
+		
+			<section>
+			
+				<div class="sectionTitle">
+					<h1>Project 2</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<article>
+					<h1>Library Management System</h1>
+					<h4 style="color:#cf8a05;font-weight:bold">Project Duration<h4>
+					<p>2 Days</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Role<h4>
+					<p>Technical Developer</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Team Size<h4>
+					<p>3</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Software Used<h4>
+					<p>Netbeans 8.2</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Language Used<h4>
+					<p>JSP and Servlets, CSS</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Project Description<h4>
+					<p>The scope of the project is to develop an Web Application for the Library. The Library
+Management System provides the User interactivity web pages and purchase the book.</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Responsibility<h4>
+					<ul type="square">
+				<li>Developed the JSP code for the front design of web page.</li>
+				<li>Developed the Backend database using the MySQL and establish the connection.</li>
+	
+			</ul>
+			<h4 style="color:#cf8a05;font-weight:bold">Github Code<h4>
+			<a href="https://github.com/karthi2000/Library-Management-System">https://github.com/karthi2000/Library-Management-System</a>
+				</article>
+				
+				
+				
+				</div>
+			
+			<div class="clear"></div>
+		</section>
+		
+		
+			<section>
+			
+				<div class="sectionTitle">
+					<h1>Project 3</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<article>
+					<h1>Tribal Marketing</h1>
+					<h4 style="color:#cf8a05;font-weight:bold">Project Duration<h4>
+					<p>7 Days</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Role<h4>
+					<p>Technical Developer</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Team Size<h4>
+					<p>3</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Software Used<h4>
+					<p>Netbeans 8.2</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Language Used<h4>
+					<p>JSP and Servlets, CSS, Bootstrap</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Project Description<h4>
+					<p>TRIBAL E-MARKETING is the web application that will help the tribal to promote market and sell tribal products such as Handicrafts, Arts, Paintings, Minor Forest Product, etc. to achieve success and increase in their standard of living. </p>
+					<h4 style="color:#cf8a05;font-weight:bold">Responsibility<h4>
+					<ul type="square">
+				<li>Developed the JSP code for the front design of web page.</li>
+				<li>Developed the Backend database using the MySQL and establish the connection.</li>
+	
+			</ul>
+			<h4 style="color:#cf8a05;font-weight:bold">Github Code<h4>
+			<a href="https://github.com/karthi2000/Tribal-Marketing-">https://github.com/karthi2000/Tribal-Marketing-</a>
+				</article>
+				
+				
+				
+				</div>
+			
+			<div class="clear"></div>
+		</section>
+			<section>
+			
+				<div class="sectionTitle">
+					<h1>Project 4</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<article>
+					<h1>Electricity distribution for Farmers using Android Application</h1>
+					<h4 style="color:#cf8a05;font-weight:bold">Project Duration<h4>
+					<p>Smart India Hackathon Project (2 Days)</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Role<h4>
+					<p>Technical Developer</p>
+					
+					<h4 style="color:#cf8a05;font-weight:bold">Team Size<h4>
+					<p>6</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Software Used<h4>
+					<p>Android Studio</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Language Used<h4>
+					<p>XML, java</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Project Description<h4>
+					<p>The scope of the project is to develop an Android Application which will be useful for the farmers. The farmers can easily note the Electricity reading and the Government can easily notify about the power shutdown during peak hours.</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Responsibility<h4>
+					<ul type="square">
+				<li>Developed the Front End.</li>
+				
+	
+			</ul>
+			
+				</article>
+				
+				
+				
+				</div>
+			
+			<div class="clear"></div>
+		</section>
+		<section>
+			
+				<div class="sectionTitle">
+					<h1>Project 4</h1>
+				</div>
+				
+				<div class="sectionContent">
+					<article>
+					<h1>Flight Reservation System</h1>
+					<h4 style="color:#cf8a05;font-weight:bold">Project Duration<h4>
+					<p>5days</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Role<h4>
+					<p>Technical Developer</p>
+					
+					<h4 style="color:#cf8a05;font-weight:bold">Team Size<h4>
+					<p>3</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Software Used<h4>
+					<p>Android Studio</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Language Used<h4>
+					<p>XML, java</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Project Description<h4>
+					<p>The scope of the project is to develop an Android Application which will be useful for the travellers. The travellers can easily book the flight using the app.</p>
+					<h4 style="color:#cf8a05;font-weight:bold">Responsibility<h4>
+					<ul type="square">
+				<li>Developed the xml code for the front design.</li>
+				<li>Developed the Backend database using the MySQL and establish the connection.</li>
+				
+	
+			</ul>
+			<h4 style="color:#cf8a05;font-weight:bold">Github Code<h4>
+			<a href="https://github.com/karthi2000/Airline-Flight-Reservation">https://github.com/karthi2000/Airline-Flight-Reservation</a>
+			
+				</article>
+				
+				
+				
+				</div>
+			
+			<div class="clear"></div>
+		</section>
+		
+	</div>
+</div>
+
+
+
+</body>
+</html>
