@@ -1,0 +1,138 @@
+<html>
+<head>
+	<title>Web</title>
+	<style>
+		.main div
+		{
+			float: left;
+			width: 33.33%;
+		}
+	</style>
+	<script type="text/javascript" src="extern.js"></script> 
+</head>
+<body onload="hello(); code();">
+
+	
+		<select  id="size" onclick="hello()">
+			<option value="12px">12px</option>
+			<option value="15px">15px</option>
+			<option value="20px">20px</option>
+			<option value="25px">25px</option>
+			<option value="30px">30px</option>
+		</select>
+	
+		<select  id="theme" onclick="hello()">
+			<option value="chrome">Chrome</option>
+			<option value="clouds">Clouds</option>
+			<option value="github">github</option>
+			<option value="textmate">Textmate</option>
+			<option value="xcode">Xcode</option>
+			<option value="ambiance">Ambiance</option>
+			<option value="chaos">Chaos</option>
+			<option value="merbivore">Merbivore</option>
+			<option value="terminal">Terminal</option>
+			<option value="monokai">Monokai</option>
+		</select>
+
+
+
+	<div class="main">
+		<div>
+			<h3>HTML</h3>
+			<div id="editor_html" class="tag"  style=" height: 300px; width: 1500px"></div>
+		</div>
+		
+		<div>
+			<h3>CSS</h3>
+			<div id="editor_css" style=" height: 300px; width: 1500px;"></div>
+		</div>
+	
+		<div>
+			<h3>JavaScript</h3>
+			<div id="editor_js" style=" height: 300px; width: 1500px;"></div>
+		</div>
+	</div>
+	<br>
+	<button onclick="code()" value="run">Run</button>
+	<br>
+	<iframe id="output" frameborder="0" height="300px" width="1500px">
+		
+	</iframe>
+	
+	
+	<br>
+  
+	
+</body>
+  
+  
+  <script src="https://rawgithub.com/ajaxorg/ace-builds/master/src/ace.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://rawgithub.com/ajaxorg/ace-builds/master/src/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+  <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  
+  
+<script>
+	//To declare the editor
+	function hello()
+	{
+		var theme=document.getElementById('theme').value;
+		var theme_html="ace/theme/"+theme;
+		var theme_css="ace/theme/"+theme;
+		var theme_js="ace/theme/"+theme;
+		
+		var directory_html="ace/mode/html";
+		var langTools_html = ace.require("ace/ext/language_tools");
+		var editor_html = ace.edit("editor_html");
+		var size=document.getElementById('size').value;
+		document.getElementById('editor_html').style.fontSize=size;
+		document.getElementById('editor_css').style.fontSize=size;
+		document.getElementById('editor_js').style.fontSize=size;
+		editor_html.setTheme(theme_html);
+		editor_html.session.setMode(directory_html);
+		editor_html.setOptions({
+			enableBasicAutocompletion: true,
+			enableSnippets: true,
+			enableLiveAutocompletion: true
+		});
+		editor_html.resize();
+		
+		
+		editor_html.getSession().getDocument().getLength() * editor_html.renderer.lineHeight + editor_html.renderer.scrollBar.getWidth();
+		
+		
+		var directory_css="ace/mode/css";
+		var langTools_css = ace.require("ace/ext/language_tools");
+		var editor_css = ace.edit("editor_css");
+		editor_css.setTheme(theme_css);
+		editor_css.session.setMode(directory_css);
+		editor_css.setOptions({
+			enableBasicAutocompletion: true,
+			enableSnippets: true,
+			enableLiveAutocompletion: true
+		});
+		editor_css.resize();
+		
+		
+		
+		
+		var directory_js="ace/mode/javascript";
+		var langTools_js = ace.require("ace/ext/language_tools");
+		var editor_js = ace.edit("editor_js");
+		editor_js.setTheme(theme_js);
+		editor_js.session.setMode(directory_js);
+		editor_js.setOptions({
+			enableBasicAutocompletion: true,
+			enableSnippets: true,
+			enableLiveAutocompletion: true
+		});
+		editor_js.resize();
+		
+		
+	}
+	
+	
+ 
+</script>
+ 
+
+</html>
